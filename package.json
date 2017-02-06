@@ -1,0 +1,33 @@
+{
+  "name": "obehave",
+  "version": "1.0.0",
+  "description": "",
+  "main": "obehave.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "bin": {
+    "obehave": "obehave.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Obehave-testing/cli.git"
+  },
+  "author": "Obehave",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Obehave-testing/cli/issues"
+  },
+  "homepage": "https://github.com/Obehave-testing/cli#readme",
+  "dependencies": {
+    "commander": "2.9.0",
+    "ngrok": "2.2.3",
+    "path": "0.12.7",
+    "request": "2.75.0",
+    "wait-on": "2.0.1"
+  },
+  "preferGlobal": true,
+  "devDependencies": {
+    "mocha": "3.2.0"
+  }
+}
