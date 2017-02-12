@@ -1,6 +1,6 @@
 {
   "name": "obehave",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Run your Obehave tests against localhost from the command line. Useful for local development and CI.",
   "main": "obehave.js",
   "scripts": {
