@@ -23,3 +23,24 @@
        * port: `obehave test --port 4200` (tests `http://localhost:4200`)
        * host: `obehave test --host example.com`  (tests `http://example.com:80`)
    * Or use https instead of http: `obehave test --secure` (tests `https://localhost:80`)
+   
+# Examples
+See examples of the CLI in the following articles:
+* [Integrating CircleCI with Obehave](https://blog.obehave.io/integrations-obehave-and-circleci-30046588d3fd)
+* [Integrating DeployHQ with Obehave](https://blog.obehave.io/integrating-obehave-deployhq-e7fb3ca7560f)
+* Example output:
+
+                
+        Owens-MBP:obehave-deployhq-example owen$ obehave test --port 3000
+        Waiting up to 60s for 'http://localhost:3000' to become available
+        Connected to 'http://localhost:3000'
+        Created ngrok proxy:  https://7552aa81.ngrok.io
+        Created Obehave job with id: e7200130-8855-4988-ad29-b74c115d7f01
+        Obehave job 'e7200130-8855-4988-ad29-b74c115d7f01' has status 'STARTED'
+        Obehave job 'e7200130-8855-4988-ad29-b74c115d7f01' has status 'STARTED'
+        Obehave job 'e7200130-8855-4988-ad29-b74c115d7f01' has status 'STARTED'
+        Obehave job 'e7200130-8855-4988-ad29-b74c115d7f01' has status 'STARTED'
+        Obehave job 'e7200130-8855-4988-ad29-b74c115d7f01' has status 'STARTED'
+        Obehave job 'e7200130-8855-4988-ad29-b74c115d7f01' has status 'STARTED'
+        Obehave job 'e7200130-8855-4988-ad29-b74c115d7f01' has status 'FINISHED'
+        Owens-MBP:obehave-deployhq-example owen$ 
