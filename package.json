@@ -1,7 +1,18 @@
 {
   "name": "obehave",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Run your Obehave tests against localhost from the command line. Useful for local development and CI.",
+  "keywords": [
+    "selenium",
+    "behaviour testing",
+    "tdd",
+    "bdd",
+    "test",
+    "testing",
+    "webdriver",
+    "cucumberjs",
+    "gherkin"
+  ],
   "main": "obehave.js",
   "scripts": {
     "test": "mocha"
