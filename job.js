@@ -1,6 +1,6 @@
 const request = require('request');
 // Set `OBEHAVE_API` as an environment variable for local development.
-const api = process.env.OBEHAVE_API || 'https://app.obehave.io/api/v1';
+const api = process.env.OBEHAVE_API || 'https://www.obehave.io/api/v1';
 const url = api + '/jobs';
 
 /**
