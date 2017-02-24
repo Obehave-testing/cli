@@ -1,7 +1,7 @@
-const path = require('path');
-const ngrok = require('ngrok');
-const job = require('./job');
-const waitOn = require('wait-on');
+var path = require('path');
+var ngrok = require('ngrok');
+var job = require('./job');
+var waitOn = require('wait-on');
 
 function test(apiKey, protocol, domain, port) {
     if (!apiKey) {
@@ -17,7 +17,7 @@ function test(apiKey, protocol, domain, port) {
         domain = 'localhost';
     }
 
-    const target = `${protocol}://${domain}:${port}`;
+    var target = `${protocol}://${domain}:${port}`;
 
     console.log(`Waiting up to 60s for '${target}' to become available`);
     waitOn({resources: [target], interval: 1000, timeout: 60000}, err => {

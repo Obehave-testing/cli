@@ -40,5 +40,9 @@
   "preferGlobal": true,
   "devDependencies": {
     "mocha": "3.2.0"
-  }
+  },
+  "engines": {
+    "node": ">=4.2.1"
+  },
+  "engineStrict": true
 }

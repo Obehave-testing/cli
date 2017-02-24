@@ -1,7 +1,7 @@
-const request = require('request');
+var request = require('request');
 // Set `OBEHAVE_API` as an environment variable for local development.
-const api = process.env.OBEHAVE_API || 'https://www.obehave.io/api/v1';
-const url = api + '/jobs';
+var api = process.env.OBEHAVE_API || 'https://www.obehave.io/api/v1';
+var url = api + '/jobs';
 
 /**
  * Creates an OBehave job.
@@ -29,8 +29,8 @@ function create(target, apiKey, callback) {
         }
 
         if (response.statusCode === 400) {
-            const hasError = (response.body && response.body.error);
-            const message = hasError ? response.body.error : '';
+            var hasError = (response.body && response.body.error);
+            var message = hasError ? response.body.error : '';
             throw(`Failed to create job due to bad request. ${message}`)
         }
 
