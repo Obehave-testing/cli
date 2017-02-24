@@ -21,10 +21,10 @@ program
     .option('-h, --host <string>', 'host your server runs on (defaults to "localhost")')
     .option('-p, --port <integer>', 'port your server runs on (detaults to "80")', helpers.tryParseInt)
     .action(function (options) {
-        let port = options.port || process.env.OBEHAVE_PORT;
-        let apiKey = options.apiKey || process.env.OBEHAVE_APIKEY;
-        let host = options.host || process.env.OBEHAVE_HOST;
-        let protocol = (options.secure || process.env.secure) ? 'https' : 'http';
+        var port = options.port || process.env.OBEHAVE_PORT;
+        var apiKey = options.apiKey || process.env.OBEHAVE_APIKEY;
+        var host = options.host || process.env.OBEHAVE_HOST;
+        var protocol = (options.secure || process.env.secure) ? 'https' : 'http';
         return test(apiKey, protocol, host, port);
     });
 

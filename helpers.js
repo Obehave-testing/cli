@@ -1,6 +1,6 @@
 
 function tryParseInt(arg) {
-    const result = parseInt(arg);
+    var result = parseInt(arg);
     // Parse int returns NaN if the first character in `arg` cannot be converted to a string.
     // @see https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/parseInt
     if (isNaN(result)) {
@@ -9,4 +9,4 @@ function tryParseInt(arg) {
     return result;
 }
 
-module.exports = {tryParseInt}
+module.exports = {tryParseInt};
