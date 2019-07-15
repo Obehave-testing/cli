@@ -1,3 +1,5 @@
+## NOTE: The OBehave project has been discontinued and so this CLI project is no longer useful.
+
 # Why
 * The Obehave CLI enables you to run all your tests defined in [Obehave app](https://app.obehave.io) against any url you specify. 
 * This is useful during development (say you want to run tests against localhost to debug your app), and for calling Obehave against your server when it's running from Continuous Deployment services.
